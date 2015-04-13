@@ -1,0 +1,8 @@
+<% @bikes.each do |bike| %>
+    <div class="bike">
+        <h3><%= bike.name %></h3>
+        <img class="img-tumbnail" height=100px width= 100px src="<%= bike.image %>">
+        <button class="btn btn-default" type="button"><%= link_to "View this bike", bike_path(bike) %></button>
+    </div>
+
+<% end %>

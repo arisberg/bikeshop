@@ -1,0 +1,11 @@
+<%= form_for @bike do |f| %>
+                    <ul>
+                        <li>Name: <%= f.text_field :name %></li>
+                        <li>Color: <%= f.text_field :color %></li>
+                        <li>Brand: <%= f.text_field :brand %></li>
+                        <li>Height: <%= f.text_field :height %></li>
+                        <li>Weight: <%= f.text_field :weight %></li>
+                        <li>Image: <%= f.text_field :image %></li>
+                    </ul>
+                    <%= f.submit "Add Bike!" %>
+                <% end %>
